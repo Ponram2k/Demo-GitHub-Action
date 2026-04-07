@@ -1,0 +1,9 @@
+name: Manual Workflow
+on:
+  workflow_dispatch:
+jobs:
+  show-date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print current date and time
+        run: date
