@@ -1,0 +1,10 @@
+name: Schedule Action
+on:
+  schedule:
+    - cron: "1 * * * *"
+jobs:
+  schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "Scheduled job execution"
